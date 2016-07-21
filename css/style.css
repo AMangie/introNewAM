@@ -1,0 +1,166 @@
+/*
+font-family:'Neue Haas Unica W01 UltraLight';
+font-family:'Neue Haas Unica W01 Ult1492664';
+font-family:'Neue Haas Unica W01 Thin';
+font-family:'Neue Haas Unica W01 Thi1492562';
+font-family:'Neue Haas Unica W01 Light';
+font-family:'Neue Haas Unica W01 Lig1492560';
+font-family:'Neue Haas Unica W01 Regular';
+font-family:'Neue Haas Unica W01 Hea1492559';
+font-family:'Neue Haas Unica W01 Medium It';
+font-family:'Neue Haas Unica W01 Medium It';
+ont-family:'Neue Haas Unica W01 Med 1492561';
+font-family:'Neue Haas Unica W01 Bold';
+font-family:'Neue Haas Unica W01 Bol1492557';
+font-family:'Neue Haas Unica W01 Heavy';
+font-family:'Neue Haas Unica W01 Hea1492558';
+font-family:'Neue Haas Unica W01 Black';
+font-family:'Neue Haas Unica W01 Bla1492556';
+font-family:'Neue Haas Unica W01 ExtraBlack';
+font-family:'Neue Haas Unica W01 Thi1492563';
+*/
+/*
+@font-face {
+    font-family: 'NeueHaasUnicaPro-Italic';
+    src: url("../fonts/NeueHaasUnica/2E689C_0_0.eot");
+    src: url("../fonts/NeueHaasUnica/2E689C_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasUnica/2E689C_0_0.woff2") format("woff2"), url("../fonts/NeueHaasUnica/2E689C_0_0.woff") format("woff"), url("../fonts/NeueHaasUnica/2E689C_0_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica W01 Light';
+    src: url("../fonts/NeueHaasUnica/2E689C_1_0.eot");
+    src: url("../fonts/NeueHaasUnica/2E689C_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasUnica/2E689C_1_0.woff2") format("woff2"), url("../fonts/NeueHaasUnica/2E689C_1_0.woff") format("woff"), url("../fonts/NeueHaasUnica/2E689C_1_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica W01 Medium It';
+    src: url("../fonts/NeueHaasUnica/2E689C_2_0.eot");
+    src: url("../fonts/NeueHaasUnica/2E689C_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasUnica/2E689C_2_0.woff2") format("woff2"), url("../fonts/NeueHaasUnica/2E689C_2_0.woff") format("woff"), url("../fonts/NeueHaasUnica/2E689C_2_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica W01 Regular';
+    src: url("../fonts/NeueHaasUnica/2E689C_4_0.eot");
+    src: url("../fonts/NeueHaasUnica/2E689C_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasUnica/2E689C_4_0.woff2") format("woff2"), url("../fonts/NeueHaasUnica/2E689C_4_0.woff") format("woff"), url("../fonts/NeueHaasUnica/2E689C_4_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica W01 Thin';
+    src: url("../fonts/NeueHaasUnica/2E689C_5_0.eot");
+    src: url("../fonts/NeueHaasUnica/2E689C_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasUnica/2E689C_5_0.woff2") format("woff2"), url("../fonts/NeueHaasUnica/2E689C_5_0.woff") format("woff"), url("../fonts/NeueHaasUnica/2E689C_5_0.ttf") format("truetype")
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: 'Neue Haas Unica W01 Regular', sans-serif;
+  background-color: #094b8d;
+  color: #fff;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loading-page {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.loading-page .counter, .loading-page .title {
+  text-align: center;
+}
+.loading-page .counter p, .loading-page .title p {
+    font-size: 30px;
+    font-weight: 100;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-family: NeueHaasUnicaPro-Thin,sans-serif;
+}
+.loading-page .counter p b, .loading-page .title p b {
+    font-weight: 400;
+    font-family: 'Neue Haas Unica W01 Regular', sans-serif;
+}
+.loading-page .counter h1 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.loadLine{
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+.loading-page .counter hr {
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+    height: 4px;
+    border-radius: 25px;
+}
+.loading-page .title {
+  position: relative;
+  max-width: 700px;
+}
+.loading-page .counter {
+  position: relative;
+  width: 400px;
+}
+.loading-page .counter h1.abs {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.loading-page .counter .color {
+  width: 0px;
+  overflow: hidden;
+  color: #f60d54;
+}
+.isoImg{
+  max-width: 60px;
+  margin-bottom: 20px
+}
+.unpackedImg{
+  max-width: 300px;
+}
+.goToButton{
+  background-color: #ed2f22;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+}
+.goToButton:hover{
+background-color:#d2291e;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Experiencia Aeroméxico</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="loading-page">
+      <div class="counter">
+        <img class="isoImg" src="img/iso.svg" alt="Aeroméxico" title="Aeroméxico">
+        <p>Cargando <b>Experiencia</b></p>
+        <span class="loadLine"><hr/></span>
+        <h1>0%
+          <!--
+          h1.abs loading
+          h1.abs.color loading
+          -->
+        </h1>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script type="text/javascript">
+        $(document).ready(function() {
+          var counter = 0;
+          var c = 0;
+          var i = setInterval(function(){
+              $(".loading-page .counter h1").html(c + "%");
+              $(".loading-page .counter hr").css("width", c + "%");
+              // $("body").css("background", "linear-gradient(to right, #094b8d "+ c + "%,#0b2342 "+ c + "%)");
+            /*
+            $(".loading-page .counter h1.color").css("width", c + "%");
+            */
+            counter++;
+            c++;
+            if(counter == 101) {
+                clearInterval(i);
+            }
+          }, 30);
+        });
+    </script>  
+  </body>
+</html>
