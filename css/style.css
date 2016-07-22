@@ -98,10 +98,10 @@ body {
 }
 .loading-page .counter p, .loading-page .title p {
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 20px;
-    font-family: NeueHaasUnicaPro-Thin,sans-serif;
+    /*font-family: NeueHaasUnicaPro-Thin,sans-serif;*/
 }
 .loading-page .title p {
     font-size: 40px;
@@ -110,6 +110,9 @@ body {
 .loading-page .counter p b, .loading-page .title p b {
     font-weight: 400;
     font-family: 'Neue Haas Unica W01 Regular', sans-serif;
+}
+.loading-page .title p b{
+  color:#f4ad41;
 }
 .loading-page .counter h1 {
     color: rgba(255, 255, 255, 0.4);
@@ -157,7 +160,7 @@ body {
   background-color: #ed2f22;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   border-radius: 50px;
   padding: 30px;
@@ -165,6 +168,7 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+.bigBu{padding: 30px 80px;}
 .goToButton:hover{
 background-color:#d2291e;
 }
